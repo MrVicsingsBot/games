@@ -1,0 +1,16 @@
+// Generate a random number between 1 and 100
+const answer = Math.floor(Math.random() * 100) + 1;
+
+function checkGuess() {
+	// Get the player's guess from the input field
+	const guess = Number(document.getElementById("guess").value);
+
+	// Compare the guess to the answer
+	if (guess === answer) {
+		document.getElementById("result").innerHTML = "You win!";
+	} else if (guess < answer) {
+		document.getElementById("result").innerHTML = "Too low! Guess again.";
+	} else {
+		document.getElementById("result").innerHTML = "Too high! Guess again.";
+	}
+}
