@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess the Number Game</title>
+	<style>
+		input[type="number"] {
+			padding: 5px;
+			font-size: 20px;
+		}
+		button {
+			margin-top: 10px;
+			padding: 5px 10px;
+			font-size: 20px;
+			background-color: #0095DD;
+			color: #FFF;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Guess the Number Game</h1>
+	<p>Guess a number between 1 and 100:</p>
+	<input type="number" id="guess">
+	<button onclick="checkGuess()">Guess</button>
+	<p id="result"></p>
+	
+	<script src="game.js"></script>
+</body>
+</html>
